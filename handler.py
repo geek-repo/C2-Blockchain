@@ -5,7 +5,9 @@ import sys
 import time
 
 infura_key = "wss://"
-infura_key+= "YOUR_PROJECT_KEY_GENERATED_ON_INFURA" # Sign up on infura and get your ropsten key and paste here
+
+# add a /ws/ like this in your key:- ropsten.infura.io/ws/v3/PROJECT_ID
+infura_key+= "ropsten.infura.io/ws/v3/PROJECT_ID" # Sign up on infura and get your ropsten key and paste here
 
 
 # Source code of solidity is stored on another file
@@ -36,7 +38,7 @@ def getcoin(wallet):
         
 def gen_wallet():
     global key,private_key
-    print("\n[+] Generating a Temp Wallet")
+    print("[+] Generating a Temp Wallet")
     # creating a wallet
 
     wallet_address_obj = web3.eth.account.create()
@@ -52,8 +54,8 @@ def main():
     global key,private_key
     gen_wallet()
     getcoin(key)  
-    print("[*] Tool will sleep for 30 seconds to get the balance updated in our wallet")  
-    time.sleep(30)
+    print("[*] Tool will sleep for 80 seconds to get the balance updated in our wallet")  
+    time.sleep(80)
     starter(key,private_key)
 
     
