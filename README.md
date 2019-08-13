@@ -1,5 +1,8 @@
 # C2-Blockchain
-This is a C2 Implemented over Ethereum Smart Contracts based on Ropsten TestNet Server
+This is a C2 Implemented over Ethereum Smart Contracts based on Ropsten TestNet Server<br/>
+To read more about how we made this poc please refer to the series [here](https://sarthaksaini.com/2019/August/Blockchain/parts/1/Introduction.html).
+
+We have Explained everything from introduction of blockchain to Using smart contracts over python
 
 ## Installation
 
